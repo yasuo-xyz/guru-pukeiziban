@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './App.css';
+
 
 interface RegisterFormProps {
   onSubmit: (formData: FormData) => void;

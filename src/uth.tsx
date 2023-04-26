@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
+import './App.css';
+
 
 const Auth = () => {
   const [error, setError] = useState<string>('');

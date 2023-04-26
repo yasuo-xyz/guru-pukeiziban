@@ -1,6 +1,6 @@
-// LoginForm.tsx
-
 import React, { useState } from 'react';
+import './App.css';
+
 
 type LoginFormProps = {
   onSubmit: (formData: FormData) => void;
