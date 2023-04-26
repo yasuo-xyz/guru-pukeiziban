@@ -21,7 +21,6 @@ const Auth = () => {
 
   return (
     <div>
-      <h2>新規登録/ログイン</h2>
       {error && <p>{error}</p>}
       <RegisterForm onSubmit={handleRegisterSubmit} />
       <LoginForm onSubmit={handleLoginSubmit} />
