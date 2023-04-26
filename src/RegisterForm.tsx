@@ -11,6 +11,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
 
   // フォームの送信ハンドラー
+  // 役割：フォームデータのバリデーション（入力値のチェック）、データの保存やデータベースへの登録、メールの送信などが含まれます。
+  // 続き：フォームの送信ハンドラーは、正確かつ安全にフォームデータを処理し、目的に応じた適切なアクションを実行することを担います。
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // フォームのデフォルトの送信を防止
     const formData = new FormData(event.target as HTMLFormElement); // フォームデータを取得

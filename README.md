@@ -1,3 +1,5 @@
+<!-- ここのファイルの意味は「まず最初に読んでほしいドキュメント（記録)」とゆう意味 -->
+<!-- 要はREADME.mdファイルがあれば最初に読んでねって事！！ -->
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
