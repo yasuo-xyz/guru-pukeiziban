@@ -60,6 +60,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <button>新規登録</button>
         <button type="submit">ログイン</button>
       </form>
     </div>
