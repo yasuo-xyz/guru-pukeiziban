@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 
+// Propsの型を定義
+type RegistrationFormProps = {
+  onSubmit: () => void;
+};
 // 新規登録フォームのコンポーネント
-const RegistrationForm: React.FC = () => {
+const RegistrationForm: React.FC<RegistrationFormProps> = () => {
   // ユーザーの入力値を管理するステート
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
