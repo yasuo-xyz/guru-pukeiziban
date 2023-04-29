@@ -49,11 +49,12 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
       <h2>ログイン</h2>
       <form onSubmit={handleFormSubmit}>
         <input
-          type="text"
-          placeholder="ユーザー名"
+          type="email"
+          placeholder="メールアドレス"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
+
         <input
           type="password"
           placeholder="パスワード"
