@@ -18,7 +18,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
 
     // バリデーションのチェック
     if (!username || !email || !password) {
-      setError('全てのフィールドを入力してください。');
+      setError('全ての項目を入力してください。');
       return;
     }
 
