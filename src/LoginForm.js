@@ -1,22 +1,19 @@
+// このファイルはフロントエンドに該当
 import React, { useState } from 'react';
 
 // Propsの型を定義
-type LoginFormProps = {
-  onSubmit: (formData: FormData) => void;
-};
-
-const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
+const LoginForm = ({ onSubmit }) => {
   // フォーム入力のstateを管理する
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState<string[]>([]);
+  const [errors, setErrors] = useState([]);
 
   // フォームの送信ハンドラー
-  const handleFormSubmit = async (e: React.FormEvent) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     // バリデーションチェックを実行
-    const validationErrors: string[] = [];
+    const validationErrors = [];
     if (!username) {
       validationErrors.push('メールアドレスを入力してください。');
     }
@@ -91,5 +88,3 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
     </div>
   );
 };
-
-export default LoginForm;
