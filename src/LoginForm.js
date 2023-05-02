@@ -1,5 +1,5 @@
 // このファイルはフロントエンドに該当
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Propsの型を定義
 const LoginForm = ({ onSubmit }) => {
@@ -88,3 +88,6 @@ const LoginForm = ({ onSubmit }) => {
     </div>
   );
 };
+
+// LoginFormをエクスポートする
+export default LoginForm;

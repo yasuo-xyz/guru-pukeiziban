@@ -1,5 +1,5 @@
 // このファイルはフロントエンドに該当
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Reactコンポーネントの定義
 const RegistrationForm = ({ onSubmit }) => {
