@@ -1,11 +1,12 @@
 // このファイルはフロントエンドに該当
-import React, { useState } from 'react';
+import { useState } from 'react';
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
 import axios from 'axios';
 
 const Auth = () => {
   const [error, setError] = useState(null);
+  const [formData] = useState({});
 
   // 新規登録フォームの送信ハンドラー
   const handleRegisterSubmit = async () => {
