@@ -13,16 +13,20 @@ const LoginForm = ({ onSubmit }) => {
     e.preventDefault();
 
     // バリデーションチェックを実行
+    // バリデーションエラーを格納する配列を宣言する
     const validationErrors = [];
+    // ユーザー名が未入力の場合は、エラーメッセージを配列に追加する
     if (!username) {
       validationErrors.push('メールアドレスを入力してください。');
     }
+
+    // パスワードの長さが6未満の場合は、エラーメッセージを配列に追加する
     if (password.length < 6) {
       validationErrors.push('パスワードは6文字以上で入力してください。');
     }
 
+    // もしバリデーションエラーがある場合は、エラーメッセージを表示し、処理を中断する
     if (validationErrors.length > 0) {
-      // エラーがある場合は、エラーを表示する
       setErrors(validationErrors);
       return;
     }
