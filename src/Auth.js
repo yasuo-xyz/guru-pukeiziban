@@ -30,13 +30,20 @@ const Auth = () => {
     }
   };
 
+  // コンポーネントを返す
   return (
+    // ディレクトリの開始タグ
     <div>
+      {/* エラーがある場合は、エラーメッセージを表示する */}
       {error && <p>{error}</p>}
+      {/* RegisterFormコンポーネントをレンダリングし、onSubmitプロパティにhandleRegisterSubmit関数を渡す */}
       <RegisterForm onSubmit={handleRegisterSubmit} />
+      {/* LoginFormコンポーネントをレンダリングし、onSubmitプロパティにhandleLoginSubmit関数を渡す */}
       <LoginForm onSubmit={handleLoginSubmit} />
+      {/* ディレクトリの終了タグ */}
     </div>
   );
+
 };
 
 export default Auth;
