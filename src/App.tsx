@@ -15,7 +15,7 @@ function App() {
   return (
     // "content"というクラスを持つdiv要素を返す
     <div className="content">
-      // Authコンポーネントをレンダリングする
+      {/* Authコンポーネントをレンダリングする */}
       <Auth />
     </div>
   );
