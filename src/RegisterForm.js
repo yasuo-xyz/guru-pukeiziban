@@ -48,33 +48,43 @@ const RegistrationForm = ({ onSubmit }) => {
   };
 
   // フォームの描画
+  // 要素を返す
   return (
+    // div要素を返す
     <div>
+      {/* h1要素をレンダリングする */}
       <h1>新規登録</h1>
+      {/* errorが定義されている場合は、p要素をレンダリングしてエラーメッセージを表示する */}
       {error && <p>{error}</p>}
+      {/* フォーム要素をレンダリングする */}
       <form onSubmit={handleSubmit}>
+        {/* ユーザー名を入力するinput要素をレンダリングする */}
         <input
           type="text"
           placeholder="ユーザー名"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
+        {/* メールアドレスを入力するinput要素をレンダリングする */}
         <input
           type="email"
           placeholder="メールアドレス"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {/* パスワードを入力するinput要素をレンダリングする */}
         <input
           type="password"
           placeholder="パスワード"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        {/* フォームを送信するためのボタン要素をレンダリングする */}
         <button type="submit">登録</button>
       </form>
     </div>
   );
+
 };
 
 // RegistrationFormをエクスポートする
