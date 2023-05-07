@@ -64,8 +64,10 @@ const LoginForm = ({ onSubmit }) => {
   return (
     <div>
       <h2>ログイン</h2>
+      {/* エラーがあれば、エラーリストを表示 */}
       {errors.length > 0 && (
         <ul>
+          {/* エラーをリストで表示 */}
           {errors.map((error) => (
             <li key={error}>{error}</li>
           ))}
@@ -78,19 +80,21 @@ const LoginForm = ({ onSubmit }) => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-
-
+        {/* パスワード入力欄 */}
         <input
           type="password"
           placeholder="パスワード"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        {/* 新規登録用ボタン */}
         <button>新規登録</button>
+        {/* ログインボタン */}
         <button type="submit">ログイン</button>
       </form>
     </div>
   );
+
 };
 
 // LoginFormをエクスポートする
